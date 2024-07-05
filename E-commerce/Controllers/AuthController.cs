@@ -51,7 +51,7 @@ namespace E_commerce.Controllers
 
                 return Ok(result);
             }
-        [Authorize]
+              [Authorize]
 
             [HttpPost("logout")]
             public async Task<IActionResult> Logout()

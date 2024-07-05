@@ -12,3 +12,5 @@ global using Microsoft.IdentityModel.Tokens;
 global using E_commerce.Models;
 global using E_commerce.Services;
 global using System.ComponentModel.DataAnnotations;
+global using E_commerce.Repository;
+global using E_commerce.DTOs;

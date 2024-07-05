@@ -12,9 +12,9 @@ namespace E_commerce.Services
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly JWT _jwt;
-        private readonly SignInManager<IdentityRole> _signInManager;
+        private readonly SignInManager<ApplicationUser> _signInManager;
 
-        public AuthServices(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager, IOptions<JWT> jwt, SignInManager<IdentityRole> signInManager)
+        public AuthServices(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager, IOptions<JWT> jwt, SignInManager<ApplicationUser> signInManager)
         {
             _userManager = userManager;
             _roleManager = roleManager;
